@@ -87,13 +87,13 @@ class LandingPageMixin(abc.ABC):
                     "href": urljoin(base_url, f"{path}/search"),
                     "method": "GET",
                 },
-                {
-                    "rel": Relations.search.value,
-                    "type": MimeTypes.geojson.value,
-                    "title": "STAC search [POST]",
-                    "href": urljoin(base_url, f"{path}/search"),
-                    "method": "POST",
-                },
+#                {
+#                    "rel": Relations.search.value,
+#                    "type": MimeTypes.geojson.value,
+#                    "title": "STAC search [POST]",
+#                    "href": urljoin(base_url, f"{path}/search"),
+#                    "method": "POST",
+#                },
             ],
             stac_extensions=extension_schemas,
         )
